@@ -48,9 +48,13 @@
 
 
 	<?php if($id!=null): ?>
-		<h2>please acknowledge receipt of delivery of any baked orders</h2>
 		<br>
+		<h2>here is your order list. please acknowledge the completion of deliveries via clicking "Delivery Complete"</h2>
 		<table>
+		<tr><th>order no.</th>
+		<th>size</th>
+		<th>status</th>
+		</tr>
 		<?php foreach($bakeds as $baked) : ?>
 			<tr>
 				<td><?php echo $baked['id']; ?></td>
